@@ -1,0 +1,376 @@
+:root {
+  --font-family: artico regular;
+}
+.mere {
+  display: flex;
+  flex-direction: column;
+}
+.haut {
+  display: flex;
+  width: 100%;
+  height: 700px;
+}
+.footer {
+  width: 100%;
+  /* height: 200px; */
+  border-top: 2px solid rgba(128, 128, 128, 0.182);
+}
+/* .gauche {
+  height: 100%;
+  display: flex;
+  flex: 1;
+} */
+.gauche {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+}
+.droite {
+  /* width: 43%; */
+  width: 650px;
+  flex-shrink: 0;
+  height: 100%;
+  border-left: 3px solid rgba(128, 128, 128, 0.249);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+  width: 84%;
+}
+.titre h3 {
+  font-size: 17.5px;
+  font-weight: 600;
+  color: #1c1e21;
+  margin-bottom: 8px;
+  /* font-family: var(--font-family); */
+}
+.formulaire {
+  width: 100%;
+}
+.formulaire input {
+  width: 95%;
+  height: 60px;
+  border: 1.5px solid #c7c7cc;
+  border-radius: 14px;
+  font-size: 15px;
+  padding-left: 18px;
+  color: #1c1e21;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 15px;
+}
+.formulaire input:hover {
+  border: 1px solid black;
+}
+.formulaire input:focus {
+  border: 1px solid #116be0;
+}
+
+.formulaire input:focus::placeholder {
+  color: #116be0;
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.password-wrapper input {
+  width: 99%;
+  margin-bottom: 0;
+  padding-right: 48px;
+  box-sizing: border-box;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #737373;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+/* .eye-icon:hover {
+  color: #156ddf;
+} */
+/* .formulaire {
+  width: 100%;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 55px;
+  border: 1.5px solid #c7c7cc;
+  border-radius: 14px;
+  font-size: 16px;
+  padding-left: 18px;
+  padding-top: 16px;
+  color: #1c1e21;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.input-group label {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #737373;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: 10px;
+  transform: translateY(0);
+  font-size: 12px;
+  color: #156ddf;
+}
+
+.input-group input:focus {
+  border-color: #156ddf;
+} */
+
+.formulaire .seconnecter {
+  width: 100%;
+  height: 45px;
+  background-color: #156ddf;
+  color: #fffffff0;
+  border: none;
+  border-radius: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+.formulaire .seconnecter:hover {
+  background-color: #0f58b8;
+}
+.oublie {
+  width: 100%;
+  height: 43px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 40px;
+  font-size: 15.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+.nouveau {
+  width: 100%;
+  height: 43px;
+  border: 1.5px solid #156ddf;
+  color: #156ddf;
+  border-radius: 40px;
+  font-size: 15.5px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.2s;
+  margin-top: 53px;
+}
+.oublie:hover,
+.nouveau:hover {
+  background-color: rgba(128, 128, 128, 0.118);
+}
+
+.formulaire p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  gap: 4px;
+}
+.formulaire p span {
+  font-size: 17px;
+  color: black;
+}
+.meta {
+  color: #116be0;
+  position: relative;
+  top: 1px;
+}
+.g1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 27%;
+}
+.faceb {
+  font-size: 60px;
+  margin-left: 40px;
+  color: #116be0;
+  flex-shrink: 0;
+}
+.g2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  width: 120%;
+}
+.g2 img {
+  /* width: 510px; */
+  /* width: clamp(0px, 35vw, 510px); */
+  position: relative;
+  right: 0px;
+  transition: all 0.3s;
+  width: 100%;
+}
+.g1 h1 {
+  /* font-size: 65px; */
+  font-size: 340%;
+  line-height: 70px;
+  margin-left: 40px;
+  font-weight: 600;
+}
+.g1 h1 span {
+  color: #116be0;
+}
+/* ===== FOOTER ===== */
+.footer {
+  /* padding: 16px 20px 24px;
+  border-top: 1px solid #dadde1;
+  margin-top: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Langues */
+.footer-langs {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-self: start; */
+  gap: 6px 10px;
+  margin-bottom: 10px;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.footer-lang-link {
+  font-size: 15px;
+  color: #737373;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* .footer-lang-link.active {
+  font-weight: 700;
+  color: #1c1e21;
+  text-decoration: underline;
+} */
+
+.footer-lang-link:hover {
+  text-decoration: underline;
+}
+
+/* Liens nav */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 14px;
+  width: 75%;
+  line-height: 30px;
+}
+
+.footer-nav a {
+  font-size: 15px;
+  color: #737373;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 15px;
+  color: #737373;
+  /* margin-top: 8px; */
+  display: flex;
+  align-items: start;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.entete {
+  display: none;
+}
+.faceb2 {
+  font-size: 60px;
+  color: #116be0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1000px) {
+  .g2 img {
+    width: clamp(0px, 20vw, 300px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .gauche {
+    display: none;
+  }
+
+  .droite {
+    width: 100%;
+    border-left: none;
+    margin-top: 75px;
+  }
+
+  .d1 {
+    width: 70%;
+  }
+
+  .entete {
+    display: flex;
+    height: 130px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.204);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .footer-langs,
+  .footer-nav,
+  .footer-copy {
+    width: 90%;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+}
