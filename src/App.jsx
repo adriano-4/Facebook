@@ -5,7 +5,7 @@ import Loader from "../src/components/Loader";
 import "./App.css";
 import { FaFacebook } from "react-icons/fa6";
 import { FaLock, FaBolt, FaTrophy } from "react-icons/fa6";
-
+import tsopa2 from "./assets/tsopa2.png";
 function App() {
   const [started, setStarted] = useState(false);
   const [erreur, setErreur] = useState(false);
@@ -42,7 +42,7 @@ function App() {
       <div className="wrap1">
         <div className="card">
           <div className="logo-circle">
-            <img src="../src/assets/tsopa2.png" alt="" />
+            <img src={tsopa2} alt="" />
           </div>
           <h1 className="app-name">
             Tsopa<span> Be</span>

